@@ -1,0 +1,13 @@
+[Unit]
+Description= --- Hubload Leds script ---
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=sudo /opt/hubload/libc/hubleds
+StandardOutput=file:/var/log/hubload_leds.log
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

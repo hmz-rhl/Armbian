@@ -1,0 +1,13 @@
+[Unit]
+Description= --- Start Hubload JAVA ---
+
+[Service]
+User=root
+Type=simple
+ExecStart=java -jar /opt/hubload/java/hubload-runner.jar
+StandardOutput=file:/var/log/hubload_java.service.log
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

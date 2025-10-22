@@ -1,0 +1,245 @@
+A - Available												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X   X   X   X   X   X   X   1   X   X   X   X   F
+X   X   X   X   X   X   1   0   X   X   X   X   U
+0   X   X   X   X   0   0   0   1	X   1   1   P0
+0   X   X   X   X   0   0   0   X   1   1   1   P0
+0   X   X   X   X   0   0   0   1	X   1   0   P1
+0   X   X   X   X   0   0   0   X   1   1   0   P1
+1   X   X   X   X   X   0   0   1	X   1   0   P4
+1   X   X   X   X   X   0   0   X   1   1   0   P4
+0   X   X   X   X   1   0   0   1	X   1   0   P4
+0   X   X   X   X   1   0   0   X   1   1   0   P4
+1   X   X   X   X   X   0   0   1	X   1   1   P3
+1   X   X   X   X   X   0   0   X   1   1   1   P3
+0   X   X   X   X   1   0   0   0   0   X   X   P2
+1   X   X   X   X   X   0   0   0   0   X   X   P2
+												
+												
+P0 - Cable connected, no car, no auth												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+X	X	X	X	X	X	1	0	X	X	X	X	U
+0	X	X	X	X	0	0	0	0	0	X	X	A
+1	X	X	X	X	X	0	0	0	0	X	X	A
+0	X	X	X	X	1	0	0	0	0	X	X	P2
+0	X	X	X	X	0	0	0	1	X	1	0	P1
+0	X	X	X	X	0	0	0	X   1	1	0	P1
+0	X	X	X	X	1	0	0	1	X	1	1	P3
+0	X	X	X	X	1	0	0	X	1	1	1	P3
+1	X	X	X	X	X	0	0	1	X	1	1	P3
+1	X	X	X	X	X	0	0	X	1	1	1	P3
+1	X	X	X	X	X	0	0	1	X	1	0	P4
+1	X	X	X	X	X	0	0	X	1	1	0	P4
+0	X	X	X	X	1	0	0	1	X	1	0	P4
+0	X	X	X	X	1	0	0	X	1	1	0	P4
+												
+P1 - Cable connected, car connected, no auth												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+X	X	X	X	X	X	1	0	X	X	X	X	U
+0	X	X	X	X	0	0	0	0	0	X	X	A
+1	X	X	X	X	X	0	0	0	0	X	X	A
+0	X	X	X	X	0	0	0	1	X	1	1	P0
+0	X	X	X	X	0	0	0	X   1	1	1	P0
+1	X	X	X	X	X	0	0	1	X	1	1	P3
+1	X	X	X	X	X	0	0	X   1	1	1	P3
+0	X	X	X	X	1	0	0	1	X	1	1	P3
+0	X	X	X	X	1	0	0	X   1	1	1	P3
+0	X	X	X	X	1	0	0	1	X	1	0	P4
+0	X	X	X	X	1	0	0	X   1	1	0	P4
+1	X	X	X	X	X	0	0	1	X	1	0	P4
+1	X	X	X	X	X	0	0	X   1	1	0	P4
+												
+												
+P2 - Cable not connected, user auth												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+X	X	X	X	X	X	1	0	X	X	X	X	U
+0	X	X	X	X	0	0	0	0	0	X	X	A
+0	X	X	X	X	1	0	0	1	X	1	1	P3
+0	X	X	X	X	1	0	0	X	1	1	1	P3
+1	X	X	X	X	X	0	0	1	X	1	1	P3
+1	X	X	X	X	X	0	0	X	1	1	1	P3
+0	X	X	X	X	1	0	0	1	X	1	0	P4
+0	X	X	X	X	1	0	0	X	1	1	0	P4
+1	X	X	X	X	X	0	0	1	X	1	0	P4
+1	X	X	X	X	X	0	0	X	1	1	0	P4
+												
+												
+P3 - Cable connected, no car, user auth												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+X	X	X	X	X	X	1	0	X	X	X	X	U
+0	X	X	X	X	1	0	0	0	0	X	X	P2
+1	X	X	X	X	X	0	0	0	0	X	X	A
+0	X	X	X	X	0	0	0	0	0	X	X	A
+0	X	X	X	X	0	0	0	1	X	1	1	P0
+0	X	X	X	X	0	0	0	X	1	1	1	P0
+0	X	X	X	X	1	0	0	1	X	1	0	P4
+0	X	X	X	X	1	0	0	X	1	1	0	P4
+1	X	X	X	X	X	0	0	1	X	1	0	P4
+1	X	X	X	X	X	0	0	X	1	1	0	P4
+												
+												
+P4 - Ready to charge (User auth, Car connected)												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+X	X	X	X	X	X	1	0	X	X	X	X	U
+1	X	X	X	X	X	0	0	0	0	X	X	A
+0	X	X	X	X	0	0	0	0	0	X	X	A
+0	X	X	X	X	1	0	0	0	0	X	X	P2
+1	X	X	X	X	X	0	0	0	0	X	X	P2
+0	X	X	X	X	1	0	0	1	X	1	1	P3
+0	X	X	X	X	1	0	0	X	1	1	1	P3
+1	X	X	X	X	X	0	0	1	X	1	1	P3
+1	X	X	X	X	X	0	0	X	1	1	1	P3
+0	X	X	X	X	0	0	0	1	X	1	0	P1
+0	X	X	X	X	0	0	0	X	1	1	0	P1
+0	X	X	X	X	0	0	0	1	X	1	1	P0
+0	X	X	X	X	0	0	0	X	1	1	1	P0
+X	1	X	X	X	X	0	0	0	1	0	1	C1
+X	1	X	X	X	X	0	0	1	0	0	1	C2
+X	1	X	X	X	X	0	0	1	1	0	1	C3
+X	0	X	X	X	X	0	0	1	X	0	1	Sevse
+X	0	X	X	X	X	0	0	X	1	0	1	Sevse
+												
+C1 - Charging, <= 13A												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+1	X	X	X	X	X	0	0	0	0	X	X	P2
+1	X	X	X	X	X	1	0	0	0	X	X	U
+1	X	X	X	X	X	0	0	0	1	1	1	Q
+1	X	X	X	X	X	1	0	0	1	1	1	U
+0	X	X	X	X	1	X	0	0	0	X	X	Q
+0	X	X	X	X	1	X	0	0	1	1	1	Q
+0	X	X	X	X	0	X	0	0	1	0	1	Q
+0	X	X	X	X	1	X	0	0	1	1	0	Sev
+1	X	X	X	X	X	X	0	0	1	1	0	Sev
+X	0	X	X	X	X	X	0	0	1	0	1	Sevse
+0	X	X	X	X	0	0	0	0	0	X	X	A
+												
+C2 - Charging, <= 20A												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+1	X	X	X	X	X	0	0	0	0	X	X	P2
+1	X	X	X	X	X	1	0	0	0	X	X	U
+1	X	X	X	X	X	0	0	1	0	1	1	Q
+1	X	X	X	X	X	1	0	1	0	1	1	U
+0	X	X	X	X	1	X	0	0	0	X	X	Q
+0	X	X	X	X	1	X	0	1	0	1	1	Q
+0	X	X	X	X	0	X	0	1	0	0	1	Q
+0	X	X	X	X	1	X	0	1	0	1	0	Sev
+1	X	X	X	X	X	X	0	1	0	1	0	Sev
+X	0	X	X	X	X	X	0	1	0	0	1	Sevse
+0	X	X	X	X	0	0	0	0	0	X	X	A
+												
+C3 - Charging, <= 32A												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+1	X	X	X	X	X	0	0	0	0	X	X	P2
+1	X	X	X	X	X	1	0	0	0	X	X	U
+1	X	X	X	X	X	0	0	1	1	1	1	Q
+1	X	X	X	X	X	1	0	1	1	1	1	U
+0	X	X	X	X	1	X	0	0	0	X	X	Q
+0	X	X	X	X	1	X	0	1	1	1	1	Q
+0	X	X	X	X	0	X	0	1	1	0	1	Q
+0	X	X	X	X	1	X	0	1	1	1	0	Sev
+1	X	X	X	X	X	X	0	1	1	1	0	Sev
+X	0	X	X	X	X	X	0	1	1	0	1	Sevse
+0	X	X	X	X	0	0	0	0	0	X	X	A
+												
+Q - Finishing												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+1	X	X	X	X	X	0	0	0	0	X	X	P2
+1	X	X	X	X	X	0	0	1	X	1   1	P3
+1	X	X	X	X	X	0	0	X	1	1   1	P3
+0	X	X	X	X	0	0	0	0	0	X	X	A
+0	X	X	X	X	0	0	0	1	X	1	1	P0
+0	X	X	X	X	0	0	0	X	1	1	1	P0
+1	X	X	X	X	X	1	0	0	0	X	X	U
+1	X	X	X	X	X	1	0	1	X	1   1	U
+1	X	X	X	X	X	1	0	X	1	1   1	U
+0	X	X	X	X	0	1	0	0	0	X	X	U
+0	X	X	X	X	0	1	0	1	X	1	1	U
+0	X	X	X	X	0	1	0	X	1	1	1	U
+												
+Sev - Charging, suspended by car												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+1	X	X	X	X	X	0	0	0	0	X	X	P2
+1	X	X	X	X	X	0	0	1	X	1	1	P3
+1	X	X	X	X	X	0	0	X	1	1	1	P3
+1	X	X	X	X	X	1	0	0	0	X	X	U
+1	X	X	X	X	X	1	0	1	X	1	1	U
+1	X	X	X	X	X	1	0	X	1	1	1	U
+0	X	X	X	X	0	X	0	X	1	1	0	Q
+0	X	X	X	X	0	X	0	1	X	1	0	Q
+0	X	X	X	X	1	X	0	X	1	1	1	Q
+0	X	X	X	X	1	X	0	1	X	1	1	Q
+X	1	X	X	X	X	X	0	0	1	0	1	C1
+X	1	X	X	X	X	X	0	1	0	0	1	C2
+X	1	X	X	X	X	X	0	1	1	0	1	C3
+X	0	X	X	X	X	X	0	1	X	0	1	Sevse
+X	0	X	X	X	X	X	0	X	1	0	1	Sevse
+0	X	X	X	X	0	0	0	0	0	X	X	A
+												
+Sevse - Charging, suspended by supply equipment												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+1	X	X	X	X	X	0	0	0	0	X	X	P2
+1	X	X	X	X	X	0	0	1	X	1	1	P3
+1	X	X	X	X	X	0	0	X	1	1	1	P3
+1	X	X	X	X	X	1	0	0	0	X	X	U
+1	X	X	X	X	X	1	0	1	X	1	1	U
+1	X	X	X	X	X	1	0	X	1	1	1	U
+0	X	X	X	X	0	X	0	X	1	1	0	Q
+0	X	X	X	X	0	X	0	1	X	1	0	Q
+0	X	X	X	X	1	X	0	X	1	1	1	Q
+0	X	X	X	X	1	X	0	1	X	1	1	Q
+X	1	X	X	X	X	X	0	0	1	0	1	C1
+X	1	X	X	X	X	X	0	1	0	0	1	C2
+X	1	X	X	X	X	X	0	1	1	0	1	C3
+X	1	X	X	X	X	X	0	1	X	1	0	Sev
+X	1	X	X	X	X	X	0	X	1	1	0	Sev
+0	X	X	X	X	0	0	0	0	0	X	X	A
+												
+U - Unavailable												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	X	1	X	X	X	X	F
+0	X	X	X	X	0	0	0	0	0	X	X	A
+0	X	X	X	X	1	0	0	0	0	X	X	P2
+1	X	X	X	X	X	0	0	0	0	X	X	P2
+0	X	X	X	X	0	0	0	X	1	1	1	P0
+0	X	X	X	X	0	0	0	1	X	1	1	P0
+0	X	X	X	X	0	0	0	X	1	1	0	P1
+0	X	X	X	X	0	0	0	1	X	1	0	P1
+0	X	X	X	X	1	0	0	1	X	1	1	P3
+0	X	X	X	X	1	0	0	X	1	1	1	P3
+1	X	X	X	X	X	0	0	1	X	1	1	P3
+1	X	X	X	X	X	0	0	X	1	1	1	P3
+0	X	X	X	X	1	0	0	1	X	1	0	P4
+0	X	X	X	X	1	0	0	X	1	1	0	P4
+1	X	X	X	X	X	0	0	1	X	1	0	P4
+1	X	X	X	X	X	0	0	X	1	1	0	P4
+												
+F - Faulted												
+NAM	OE	D2	D1	D0	A	U	F	P1	P0	C1	C0	Futur
+X	X	X	X	X	X	1	0	X	X	X	X	U
+0	X	X	X	X	0	0	0	0	0	X	X	A
+0	X	X	X	X	1	0	0	0	0	X	X	P2
+1	X	X	X	X	X	0	0	0	0	X	X	P2
+0	X	X	X	X	0	0	0	X	1	1	1	P0
+0	X	X	X	X	0	0	0	1	X	1	1	P0
+0	X	X	X	X	0	0	0	X	1	1	0	P1
+0	X	X	X	X	0	0	0	1	X	1	0	P1
+0	X	X	X	X	1	0	0	1	X	1	1	P3
+0	X	X	X	X	1	0	0	X	1	1	1	P3
+1	X	X	X	X	X	0	0	1	X	1	1	P3
+1	X	X	X	X	X	0	0	X	1	1	1	P3
+0	X	X	X	X	1	0	0	1	X	1	0	P4
+0	X	X	X	X	1	0	0	X	1	1	0	P4
+1	X	X	X	X	X	0	0	1	X	1	0	P4
+1	X	X	X	X	X	0	0	X	1	1	0	P4
+

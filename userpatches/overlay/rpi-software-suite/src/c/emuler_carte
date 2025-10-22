@@ -1,0 +1,2 @@
+# !/bin/sh
+echo "0123456789abcdef" > /usr/share/hubload/notif/VALUE_SCAN

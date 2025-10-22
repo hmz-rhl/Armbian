@@ -1,0 +1,13 @@
+[Unit]
+Description= --- Hubload RFID script ---
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=sudo /opt/hubload/libc/hubrfid
+StandardOutput=file:/var/log/hubload_rfid.log
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description= --- Hubload Machine script ---
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=sudo /opt/hubload/libc/hubmachine
+StandardOutput=file:/var/log/hubload_machine.log
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

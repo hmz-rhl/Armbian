@@ -1,0 +1,13 @@
+[Unit]
+Description= --- Hubload Daemon script ---
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=sudo /opt/hubload/libc/hubload
+StandardOutput=file:/var/log/hubload_daemon.log
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

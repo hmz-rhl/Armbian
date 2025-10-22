@@ -1,0 +1,13 @@
+[Unit]
+Description= --- Hubload Display script ---
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=sudo /opt/hubload/libc/hubdisplay
+StandardOutput=file:/var/log/hubload_display.log
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
