@@ -42,7 +42,9 @@ Main() {
 InstallHubload(){
 
 	#HRA
-	echo "-------------HUBLOAD Start-------------"
+	RED='\033[0;31m'
+	NC='\033[0m' # No Color
+	echo -e "${RED}-------------HUBLOAD Start-------------${NC}"
 	echo -e "\a"
 	echo -e "\a"
 	# on modifie notre environnement de boot pour avoir la console sur l'uart2
@@ -59,11 +61,12 @@ InstallHubload(){
 	echo "ls -al tmp/overlay :"
 	ls -al /tmp/overlay/
 	
-	mkdir -p /opt/hubload/libc
-	mkdir -p /opt/hubload/java/
-	mkdir -p /usr/share/hubload/notif/
-	cp -r /tmp/overlay/rpi-software-suite/ /home/
-	cp -r /tmp/overlay/ws2812b/ /home/
+	# mkdir -p /opt/hubload/libc
+	# mkdir -p /opt/hubload/java/
+	# cp -r /tmp/overlay/rpi-software-suite/ /home/
+	# cp -r /tmp/overlay/ws2812b/ /home/
+	cd /tmp/overlay/rpi-software-suite/src/c/
+	INSTALL_FROM_ARMBIAN=1 ./install.sh
 
 	# ajout d'une config pour ip sous dhcp
 	cp /tmp/overlay/20-wired.network /etc/systemd/network/
@@ -126,7 +129,7 @@ InstallHubload(){
 	##ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 	apt-get update
 
-	echo "-------------HUBLOAD End-------------"
+	echo -e "${RED}-------------HUBLOAD End-------------${NC}"
 	echo -e "\a"
 	echo -e "\a"
 	echo -e "\a"
