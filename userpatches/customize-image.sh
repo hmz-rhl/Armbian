@@ -42,11 +42,14 @@ Main() {
 InstallHubload(){
 
 	#HRA
-	RED='\033[0;31m'
+	RED='\033[0;41m'
 	NC='\033[0m' # No Color
 	echo -e "${RED}-------------HUBLOAD Start-------------${NC}"
 	echo -e "\a"
 	echo -e "\a"
+	#wifi
+	#ln -sf /lib/firmware/brcm/brcmfmac43430-sdio.bin /lib/firmware/brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt
+	#ln -sf /lib/firmware/brcm/brcmfmac43430-sdio.bin /lib/firmware/brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.bin
 	# on modifie notre environnement de boot pour avoir la console sur l'uart2
 	sed -i '/^console=/d; $a consoleargs="console=ttyS2,115200 console=tty1"' /boot/armbianEnv.txt
 	sed -i '$a console=custom' /boot/armbianEnv.txt
@@ -56,6 +59,9 @@ InstallHubload(){
 	echo "cat armbianEnv.txt :"
 	cat /boot/armbianEnv.txt
 	echo
+
+	#TODO: mettre logrotate.conf ici ou dans le script d'install
+	
 	#installation des softs hubload
 
 	echo "ls -al tmp/overlay :"
